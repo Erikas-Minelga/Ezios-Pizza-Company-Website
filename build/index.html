@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="img/index/pizza.jpg" as="image" />
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/c21c445645.js" crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+</head>
+<body>
+    <div class="bg-neutral-950 font-courgette h-12">
+        <input id="menu" type="checkbox" class="hidden peer"></input>
+        <label for="menu" class="lg:hidden peer-checked:hidden text-white text-4xl mx-4 relative z-20">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label for="menu" class="hidden text-white text-4xl peer-checked:block lg:peer-checked:hidden mx-4 relative z-20">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <nav class="relative top-[-170px] opacity-0 peer-checked:top-0 peer-checked:opacity-100 transition-all peer-checked:z-10 lg:top-0 lg:peer-checked:top-0 lg:opacity-100 lg:flex lg:peer-checked:flex lg:justify-center lg:flex-row text-3xl gap-5 text-white text-center bg-neutral-950 font-courgette">
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="index.html">Home</a></div>
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="menu.html">Menu</a></div>
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="booking.html">Book a table</a></div>
+        </nav>
+    </div>
+    <header class="h-96 bg-[url('img/index/pizza.jpg')] bg-cover bg-center">
+        <h1 class="text-[72px] text-white font-courgette top-4 relative lg:top-36 text-center">Ezio's Pizza Company</h1>
+    </header>
+    <main class="p-2">
+        <h1 class="text-center my-10 font-courgette text-4xl lg:text-5xl">What makes a great pizza?</h1>
+        <div class="h-fit lg:flex lg:flex-row">
+            <img src="img/index/fresh_ingredients.jpg" class="lg:w-1/2" loading="lazy">
+            <div class="lg:w-1/2 p-4">
+                <h2 class="text-center font-teko lg:grow 2xl:mt-24 3xl:mt-32 mb-3 text-5xl lg:text-7xl">Fresh Ingredients</h2>
+                <p class="font-teko text-3xl lg:text-5xl mb-12 lg:mt-12">
+                    We use only the freshest ingredients, carefully selected to create the perfect flavor in every bite. From vine-ripened tomatoes to locally sourced cheeses, our commitment to quality begins with the very foundation of our pizzas.
+                </p>
+            </div>
+        </div>
+        <div class="h-fit lg:flex lg:flex-row">
+            <img src="img/index/mastery1.jpg" class="lg:w-1/2 lg:order-last" loading="lazy">
+            <div class="lg:w-1/2 p-4">
+                <h2 class="text-center font-teko lg:grow 2xl:mt-24 3xl:mt-32 mb-3 text-5xl lg:text-7xl">Passion and Mastery</h2>
+                <p class="font-teko text-3xl lg:text-5xl mb-12 lg:mt-12">
+                    In the art of pizza-making, passion and mastery go hand in hand. Our chefs pour their heart and soul into crafting each pizza, driven by a love for the culinary craft. It's this passion that transforms simple ingredients into extraordinary, mouthwatering creations.
+                </p>
+            </div>
+        </div>
+        <div class="h-fit lg:flex lg:flex-row">
+            <img src="img/index/patience.jpg" class="lg:w-1/2" loading="lazy">
+            <div class="lg:w-1/2 p-4">
+                <h2 class="text-center font-teko lg:grow 2xl:mt-24 3xl:mt-32 mb-3 text-5xl lg:text-7xl">Time and Patience</h2>
+                <p class="font-teko text-3xl lg:text-5xl mb-12 lg:mt-12">
+                    At Ezio's, we understand that great pizza takes time. We embrace the patience required to allow our dough to rise to perfection and flavors to meld. Every moment spent in preparation is an investment in the exceptional taste that defines our pizzas.
+                </p>
+            </div>
+        </div>
+        <h1 class="text-center my-10 font-courgette text-4xl lg:text-5xl">...but what makes the pizza better?</h1>
+        <div class="h-fit lg:flex lg:flex-row">
+            <img src="img/index/sharing.jpg" class="lg:w-1/2 lg:order-last" loading="lazy">
+            <div class="lg:w-1/2 p-4">
+                <h2 class="text-center font-teko lg:grow 2xl:mt-24 3xl:mt-32 mb-3 text-5xl lg:text-7xl">Great Company</h2>
+                <p class="font-teko text-3xl lg:text-5xl mb-12 lg:mt-12">
+                    We believe in the power of shared moments. We celebrate the joy of gathering with friends and family over a delicious meal. Breaking bread together is a tradition that brings people closer, fostering connections and creating memories. This is why Ezio's Pizza Company was founded.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer id="foot" class="bg-stone-800 text-center text-white text-2xl font-teko 2xl:grid 2xl:grid-cols-5 2xl:justify-center">
+        <section class="my-2 2xl:col-start-2">
+            <h2 class="text-3xl">Opening Times:</h2>
+            <ul>
+                <li>Monday-Wednesday: 10:00-21:00</li>
+                <li>Thursday: Closed</li>
+                <li>Friday-Sunday: 10:00-21:00</li>
+            </ul>
+        </section>
+        <section class="my-2 2xl:col-start-4 2xl:order-3">
+            <h2 class="text-3xl">Contact:</h2>
+            <p>Email: test@test.com</p>
+            <p>Phone: 07564030195</p>
+        </section>
+        <section class="2xl:col-start-3 2xl:order-2">
+            <h2 class="text-3xl">Address:</h2>
+            <uL>
+                <li>Pizza Place</li>
+                <li>Heighington Road</li>
+                <li>Lincoln</li>
+                <li>LN4 2RJ</li>
+            </uL>
+            <div class="flex justify-center">
+                <iframe width="600" height="450" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Heighington+Road+Lincoln+UK&key=AIzaSyC9ZXW1b7brQ-W3h-7kHegjhxJMVvjQM94"></iframe> 
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

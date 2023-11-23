@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'robgraves';
+    src: url('../build/fonts/Rob Graves/Robgraves-lKYV.ttf');
+}
+
+@font-face {
+    font-family: 'crayoncrumble';
+    src: url('../build/fonts/Crayon Crumble/DkCrayonCrumble-ddll.ttf');
+}
+
+@font-face {
+    font-family: 'courgette';
+    src: url('../build/fonts/Courgette/Courgette-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'teko';
+    src: url('../build/fonts/Teko/Teko-VariableFont_wght.ttf');
+}

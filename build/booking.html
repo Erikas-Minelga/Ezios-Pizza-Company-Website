@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/c21c445645.js" crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+</head>
+<body>
+    <div class="bg-neutral-950 font-courgette h-12">
+        <input id="menu" type="checkbox" class="hidden peer"></input>
+        <label for="menu" class="lg:hidden peer-checked:hidden text-white text-4xl mx-4 relative z-20">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label for="menu" class="hidden text-white text-4xl peer-checked:block lg:peer-checked:hidden mx-4 relative z-20">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <nav class="relative top-[-170px] opacity-0 peer-checked:top-0 peer-checked:opacity-100 transition-all peer-checked:z-10 lg:top-0 lg:peer-checked:top-0 lg:opacity-100 lg:flex lg:peer-checked:flex lg:justify-center lg:flex-row text-3xl gap-5 text-white text-center bg-neutral-950 font-courgette">
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="index.html">Home</a></div>
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="menu.html">Menu</a></div>
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="booking.html">Book a table</a></div>
+        </nav>
+    </div>
+    <header class="h-96 bg-[url('img/bookings/header.jpg')] bg-cover bg-center">
+        <h1 class="text-[72px] text-white font-courgette text-center top-4 relative lg:top-36">Contacts and Bookings</h1>
+    </header>
+    <main class="p-2 text-center font-teko 2xl:grid 2xl:grid-cols-5 2xl:justify-center">
+        <section class="2xl:col-start-2 mt-12 2xl:my0">
+            <h1 class="text-center font-courgette text-4xl lg:text-6xl">To book a table</h1>
+            <ul class="mt-2 text-2xl lg:text-4xl italic">
+                <li>Call: 07985368412</li>
+                <li>Email: ezioco@pizzacompany.com</li>
+            </ul>
+        </section>
+        <section class="2xl:col-start-2 2xl:row-start-2 2xl:col-span-3 2xl:mt-12">
+            <p class="text-center 2xl:text-4xl text-2xl italic">We recommend booking in advance to avoid disappointment</p>
+        </section>
+        <section class="2xl:col-start-4 mt-12 2xl:my0">
+            <h1 class="text-4xl lg:text-6xl font-courgette">Opening Times</h1>
+            <ul class="mt-2 text-2xl lg:text-4xl italic">
+                <li>Monday-Wednesday: 10:00-21:00</li>
+                <li>Thursday: Closed</li>
+                <li>Friday-Sunday: 10:00-21:00</li>
+            </ul>
+        </section>
+        <section class="2xl:row-start-3 2xl:col-start-3 mt-12 mb-6">
+            <h1 class="font-courgette text-4xl lg:text-6xl">Find us at:</h1>
+            <ul class="mt-2 text-2xl lg:text-4xl italic">
+                <li>Pizza Place</li>
+                <li>Heighington Road</li>
+                <li>Lincoln</li>
+                <li>LN4 2RJ</li>
+            </ul>
+            <div class="flex justify-center">
+                <iframe width="600" height="450" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Heighington+Road+Lincoln+UK&key=AIzaSyC9ZXW1b7brQ-W3h-7kHegjhxJMVvjQM94"></iframe> 
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="img/menu/header.jpg" as="image" />
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/c21c445645.js" crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+</head>
+<body>
+    <div class="bg-neutral-950 font-courgette h-12">
+        <input id="menu" type="checkbox" class="hidden peer"></input>
+        <label for="menu" class="lg:hidden peer-checked:hidden text-white text-4xl mx-4 relative z-20">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label for="menu" class="hidden text-white text-4xl peer-checked:block lg:peer-checked:hidden mx-4 relative z-20">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <nav class="relative top-[-170px] opacity-0 peer-checked:top-0 peer-checked:opacity-100 transition-all peer-checked:z-10 lg:top-0 lg:peer-checked:top-0 lg:opacity-100 lg:flex lg:peer-checked:flex lg:justify-center lg:flex-row text-3xl gap-5 text-white text-center bg-neutral-950 font-courgette">
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="index.html">Home</a></div>
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="menu.html">Menu</a></div>
+            <div class="underline hover:bg-neutral-800 p-1 transition-colors"><a href="booking.html">Book a table</a></div>
+        </nav>
+    </div>
+    <header class="h-96 bg-[url('img/menu/header.jpg')] bg-cover bg-center">
+        <h1 class="text-[72px] text-white font-courgette text-center relative top-36">Menu</h1>
+    </header>
+    <main class="text-3xl lg:text-6xl font-teko py-12">
+        <h1 class="text-center">Starters</h1>
+        <div class="h-fit lg:w-1/2 my-2 m-auto grid gap-y-2 grid-cols-3 justify-between lg:text-5xl">
+            <p>Garlic Bread</p>
+            <p class="col-start-3 text-right">£5.50</p>
+            <p>Caprese Salad</p>
+            <p class="col-start-3 text-right">£5.50</p>
+            <p>Antipasti Board</p>
+            <p class="col-start-3 text-right">£10.99</p>
+            <p>Bread Sticks</p>
+            <p class="col-start-3 text-right">£4.50</p>
+        </div>
+        <h1 class="text-center mt-10">Pizza</h1>
+        <h2 class="text-center mt-5 text-2xl lg:text-3xl">All pizzas are 14"</h2>
+        <div class="h-fit lg:w-1/2 my-2 m-auto grid gap-y-2 grid-cols-3 justify-between lg:text-5xl">
+            <p>Pizza Margarita</p>
+            <p class="col-start-3 text-right">£9.99</p>
+            <p>Pepperoni</p>
+            <p class="col-start-3 text-right">£11.99</p>
+            <p>Al funghi</p>
+            <p class="col-start-3 text-right">£11.99</p>
+            <p>Veggie</p>
+            <p class="col-start-3 text-right">£11.99</p>
+            <p>Ezio's Speciale</p>
+            <p class="col-start-3 text-right">£15.99</p>
+        </div>
+        <h1 class="text-center mt-10">Pasta</h1>
+        <div class="h-fit lg:w-1/2 my-2 m-auto grid gap-y-2 grid-cols-3 justify-between lg:text-5xl">
+            <p>Spaghetti Bolognese</p>
+            <p class="col-start-3 text-right">£11.99</p>
+            <p>Penne Alla Vodka</p>
+            <p class="col-start-3 text-right">£13.99</p>
+            <p>Fettuccine Alfredo</p>
+            <p class="col-start-3 text-right">£13.99</p>
+            <p>Seafood Pasta</p>
+            <p class="col-start-3 text-right">£13.99</p>
+        </div>
+        <h1 class="text-center mt-10">Alcoholic Drinks</h1>
+        <h2 class="text-center mt-5 text-2xl lg:text-3xl">Drinks come in glasses/pints. Upgrade to bottle for £2 extra!</h2>
+        <div class="h-fit lg:w-1/2 my-2 m-auto grid gap-y-2 grid-cols-3 justify-between lg:text-5xl">
+            <p>Wine</p>
+            <p class="col-start-3 text-right">£7.99</p>
+            <p>Beer</p>
+            <p class="col-start-3 text-right">£4.99</p>
+            <p>Cider</p>
+            <p class="col-start-3 text-right">£4.99</p>
+        </div>
+        <h1 class="text-center mt-10">Soft Drinks</h1>
+        <h2 class="text-center mt-5 text-2xl lg:text-3xl">Still water served free of charge!</h2>
+        <div class="h-fit lg:w-1/2 mt-2 m-auto grid gap-y-6 grid-cols-3 justify-between lg:text-5xl">
+            <p>Cola/Lemonade/Orangeade</p>
+            <p class="col-start-3 text-right">£1.99</p>
+            <p>Apple/Orange Juice</p>
+            <p class="col-start-3 text-right">£2.99</p>
+            <p>Sparkling Water</p>
+            <p class="col-start-3 text-right">£1.99</p>
+        </div>
+    </main>
+</body>
+</html>
